@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1e0555;
+}
+
+body, .quoteInput{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-color:yellow;
+    /*
+        rem - relative to the font size of the root element, in this case the base padding provided by the browser.
+        border radius - give the edges round corners.
+    */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /*
+        starts with a width of 700px.
+        Expands with the window size.
+        But never exceeds 90% of the width of the window.
+    */
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer{
+    position: absolute;
+    top: 10rem;
+    font-size: 3rem;
+    color: yellow;
+    font-weight: bold;
+}
+
+.quote-display{
+    margin-bottom: 1rem;
+}
+
+.quoteInput{
+    border: 2px solid yellow;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.25rem 0.25rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.quoteInput:focus{
+    border: 2px solid black;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
